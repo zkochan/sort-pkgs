@@ -1,5 +1,7 @@
 # sort-pkgs
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/zkochan/sort-pkgs.svg)](https://greenkeeper.io/)
+
 > Sort packages. Dependents first.
 
 [![Build Status](https://img.shields.io/travis/zkochan/sort-pkgs/master.svg)](https://travis-ci.org/zkochan/sort-pkgs) [![npm version](https://img.shields.io/npm/v/sort-pkgs.svg)](https://www.npmjs.com/package/sort-pkgs)
