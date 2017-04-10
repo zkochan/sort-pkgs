@@ -1,0 +1,33 @@
+{
+  "name": "sort-pkgs",
+  "version": "0.0.0",
+  "description": "Sort packages. Dependents first.",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zkochan/sort-pkgs.git"
+  },
+  "keywords": [
+    "package",
+    "packages"
+  ],
+  "author": "Zoltan Kochan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zkochan/sort-pkgs/issues"
+  },
+  "homepage": "https://github.com/zkochan/sort-pkgs#readme",
+  "dependencies": {
+    "ramda": "^0.23.0",
+    "toposort": "^1.0.3"
+  },
+  "devDependencies": {
+    "tape": "^4.6.3"
+  }
+}
