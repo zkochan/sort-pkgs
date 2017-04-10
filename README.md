@@ -17,18 +17,24 @@ const sortPkgs = require('sort-pkgs')
 
 const pkgs = sortPkgs({
   'foo@1.0.0': {
-    name: 'foo',
-    version: '1.0.0',
+    manifest: {
+      name: 'foo',
+      version: '1.0.0',
+    },
     dependencies: ['bar@2.0.0', 'qar@3.0.0']
   },
   'bar@2.0.0': {
-    name: 'bar',
-    version: '2.0.0',
+    manifest: {
+      name: 'bar',
+      version: '2.0.0',
+    },
     dependencies: []
   },
   'qar@3.0.0': {
-    name: 'qar',
-    version: '3.0.0',
+    manifest: {
+      name: 'qar',
+      version: '3.0.0',
+    },
     dependencies: ['bar@2.0.0']
   },
 })
@@ -36,18 +42,24 @@ const pkgs = sortPkgs({
 console.log(pkgs)
 //> [
 //    {
-//      name: 'bar',
-//      version: '2.0.0',
+//      manifest: {
+//        name: 'bar',
+//        version: '2.0.0',
+//      },
 //      dependencies: []
 //    },
 //    {
-//      name: 'qar',
-//      version: '3.0.0',
+//      manifest: {
+//        name: 'qar',
+//        version: '3.0.0',
+//      },
 //      dependencies: ['bar@2.0.0']
 //    },
 //    {
-//      name: 'foo',
-//      version: '1.0.0',
+//      manifest: {
+//        name: 'foo',
+//        version: '1.0.0',
+//      },
 //      dependencies: ['bar@2.0.0', 'qar@3.0.0']
 //    }
 //  ]
