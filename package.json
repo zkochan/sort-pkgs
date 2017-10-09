@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/zkochan/sort-pkgs#readme",
   "dependencies": {
-    "ramda": "^0.24.0",
+    "ramda": "^0.25.0",
     "toposort": "^1.0.3"
   },
   "devDependencies": {
