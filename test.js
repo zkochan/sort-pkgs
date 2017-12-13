@@ -1,5 +1,5 @@
 'use strict'
-const sortPkgs = require('.')
+const sortPkgs = require('sort-pkgs')
 const test = require('tape')
 const R = require('ramda')
 
