@@ -10,5 +10,6 @@ module.exports = pkgsGraph => {
     )
   )
   const sortedPkgIds = toposort(pkgRelations)
-  return R.props(sortedPkgIds, pkgsGraph)
+  const independentAndSortedPkgIds = R.concat(R.difference(R.keys(pkgsGraph), sortedPkgIds), sortedPkgIds)
+  return R.props(independentAndSortedPkgIds, pkgsGraph)
 }

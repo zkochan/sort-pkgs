@@ -26,8 +26,15 @@ test('simple example', t => {
       },
       dependencies: ['bar@2.0.0'],
     },
+    'zoo@4.0.0': {
+      manifest: {
+        name: 'zoo',
+        version: '4.0.0',
+      },
+      dependencies: [],
+    }
   })
-  t.deepEqual(R.map(R.path(['manifest', 'name']), pkgs), ['bar', 'qar', 'foo'], 'packages are in correct order')
+  t.deepEqual(R.map(R.path(['manifest', 'name']), pkgs), ['zoo', 'bar', 'qar', 'foo'], 'packages are in correct order')
   t.end()
 })
 
